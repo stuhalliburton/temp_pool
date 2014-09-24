@@ -29,7 +29,7 @@ module TempPool
       @value ||= begin
         Array.new(@scheduled_count) do
           @results.pop
-        end.flatten.compact
+        end
       end
     end
 
